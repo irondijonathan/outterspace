@@ -372,6 +372,7 @@ p.slider_text{
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
   justify-content: space-between; /* Space between the sections */
+  width: 97%;
 }
 
 .info_container p {
@@ -616,8 +617,19 @@ input[type="submit"]:hover{
     }
 
 
+    .logo {
+      text-align: center;
+  
+      flex: 1; /* Takes remaining space */
+      max-width: 40%; /* Set maximum width to 10% of the viewport width */
+      margin: 0 auto; /* Center the logo horizontally */
+      justify-content: center; /* Center horizontally */
+  }
+
+
     .logo_img{
       max-width: 100%; /* Set maximum width to 100% of the viewport width */
+      height: auto;
       margin-left: 20px; /* Adjust the margin-left value as needed */
   
   }
