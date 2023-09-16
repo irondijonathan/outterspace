@@ -1,3 +1,10 @@
+body{
+  background-color: black;
+}
+.main{
+  background-color: white;
+}
+
 /* Apply styles to the .hero container */
 .hero {
     position: relative; /* Set position to relative */
