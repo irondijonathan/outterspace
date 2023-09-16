@@ -521,8 +521,13 @@ input[type="submit"]:hover{
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-        text-align: center; /* Center-align text on smaller screens */
+        display: flex;
+        flex-direction: row; /* Stack elements vertically on smaller screens */
+        text-align: left; /* Center-align text on smaller screens */
+    }
+
+    nav{
+      margin-left: 0px;
     }
 
     nav ul {
@@ -589,6 +594,11 @@ input[type="submit"]:hover{
       flex: 0 0 calc(100% - 10px); /* Each section takes 100% width on smaller screens */
       max-width: calc(100% - 10px);
   }
+
+  .gallery-section2 {
+    flex: 0 0 calc(100% - 10px); /* Each section takes 100% width on smaller screens */
+    max-width: calc(100% - 10px);
+}
 
   .container {
     flex: 0 0 calc(100% - 10px); /* Each section takes 100% width on smaller screens */
