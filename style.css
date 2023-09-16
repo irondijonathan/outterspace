@@ -35,6 +35,15 @@ body{
     height: 100vh; /* Set the height to 100% of the viewport height */
 }
 
+.hamburger-menu{
+  flex: 0 0 calc(40% - 10px); /* Each section takes about 30% width with some spacing */
+}
+.logo,
+.nav,
+.icons{
+  flex: 0 0 calc(30% - 10px); /* Each section takes about 30% width with some spacing */
+}
+
 /* Style the navigation */
 .hamburger-menu {
     display: flex;
@@ -599,8 +608,13 @@ input[type="submit"]:hover{
       top: 8px;
     }
 
-    .hamburger-menu {
-      
+    .hamburger-menu{
+      flex: 0 0 calc(15% - 10px); /* Each section takes about 30% width with some spacing */
+    }
+    .logo,
+    .nav,
+    .icons{
+      flex: 0 0 calc(30% - 10px); /* Each section takes about 30% width with some spacing */
     }
 
     .hamburger-menu ul{
