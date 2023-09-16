@@ -305,6 +305,13 @@ p.slider_text{
 
 .promo, .new-arrivals {
   margin: 0 10px; /* Add some spacing between the sections */
+  font-family: 'Montserrat', sans-serif; /* Use the Montserrat font */
+  
+}
+
+.promo p, .new-arrivals p{
+  font-weight: 200; /* Set font weight to bold (700) */
+  color: rgb(89, 88, 88);
 }
 
 
