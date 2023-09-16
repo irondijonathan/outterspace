@@ -61,9 +61,13 @@ body{
 
 .hamburger-menu a {
     text-decoration: none;
-    color: white; /* Link text color */
+    color: rgb(32, 32, 32); /* Link text color */
     font-size: medium;
     font-family: 'Montserrat', sans-serif; /* Use the Montserrat font */
+}
+
+.hamburger-menu .home{
+  text-decoration: underline;
 }
 
 .hamburger-menu input{
@@ -102,7 +106,7 @@ body{
 /* Add margin to each individual icon */
 .nav.icons i {
   margin-left: 20px;
-  color: white;
+  color: rgb(89, 88, 88);
 }
 
 
