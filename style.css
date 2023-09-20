@@ -1007,7 +1007,7 @@ hr{
   .gpay,
   .applepay,
   .amex{
-    flex-basis: 8%;
+    flex-basis: 9%;
   }
 
   .visa img,
