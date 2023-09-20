@@ -1,33 +1,60 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+console.log("test")
+// JavaScript
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// Get all of the slider images
+const sliderImages = document.querySelectorAll('.slider_1');
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// Set the current slide index
+let currentSlideIndex = 0;
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
+// Start a timer to automatically change slides
+setInterval(() => {
+  // Increment the current slide index
+  currentSlideIndex++;
+
+  // If the current slide index is greater than the number of slides, loop back to the first slide
+  if (currentSlideIndex > sliderImages.length - 1) {
+    currentSlideIndex = 0;
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
 
-// Automatically change slides every 2 seconds
-setInterval(function() {
-  plusSlides(1); // Change to the next slide
-}, 2000); // 2000 milliseconds (2 seconds)
+  // Show the current slide and hide all other slides
+  sliderImages[currentSlideIndex].style.display = 'block';
+  for (const image of sliderImages) {
+    if (image !== sliderImages[currentSlideIndex]) {
+      image.style.display = 'none';
+    }
+  }
+}, 4000); // Change the slide every 3 seconds
+
+
+
+
+
+  // Get all of the slider images
+  
+  const sliderImages2 = document.querySelectorAll('.slider img');
+
+  // Set the current slide index
+  let currentSlideIndexs = 0;
+
+  setInterval(() => {
+
+  // Increment the current slide index
+  currentSlideIndexs++;
+
+  // If the current slide index is greater than the number of slides, loop back to the first slide
+  if (currentSlideIndexs > sliderImages2.length - 1) {
+    currentSlideIndexs = 0;
+  }
+
+  // Show the current slide and hide all other slides
+  sliderImages2[currentSlideIndexs].style.display = 'block';
+  for (const image of sliderImages2) {
+    if (image !== sliderImages2[currentSlideIndexs]) {
+      image.style.display = 'none';
+    }
+  }
+  }
+
+// Change the slide every 3 seconds
+, 4000);
