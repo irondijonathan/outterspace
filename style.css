@@ -690,12 +690,18 @@ input[type="submit"]:hover{
 
 .footer p,
 .footer a,
-.footer h4,
+
 .footer li,
-.payments h5,
 .payments i,
 .payments p{
   color: rgb(163, 163, 163);
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif; /* Use the selected font */
+}
+.footer h4,
+.payments h5{
+  color: rgb(241, 241, 241);
   text-decoration: none;
   list-style: none;
   font-family: 'Roboto Condensed', sans-serif; /* Use the selected font */
